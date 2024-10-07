@@ -21,6 +21,7 @@
             <div class="MainPage__Content-LinkWrap">
                 <a href="./page/lab3.php" class="MainPage__Content-Link">Перейти к лабораторной работе №3</a>
                 <a href="./page/lab4.php" class="MainPage__Content-Link">Перейти к лабораторной работе №4</a>
+                <a href="./page/lab5.php" class="MainPage__Content-Link">Перейти к лабораторной работе №5</a>
             </div>
         </div>
 

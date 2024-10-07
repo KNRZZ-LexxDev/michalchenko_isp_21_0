@@ -65,6 +65,7 @@ body {
 
 .MainPage__Content-LinkWrap{
     display: flex;
+    flex-direction: column;
 }
 
 .MainPage__Content-Link{
@@ -146,6 +147,7 @@ body {
     
     .MainPage__Content-LinkWrap{
         display: flex;
+        flex-wrap: wrap;
     }
     
     .MainPage__Content-Link{
@@ -228,6 +230,7 @@ body {
     
     .MainPage__Content-LinkWrap{
         display: flex;
+        flex-wrap: wrap;
     }
     
     .MainPage__Content-Link{
@@ -310,6 +313,7 @@ body {
     
     .MainPage__Content-LinkWrap{
         display: flex;
+        flex-wrap: wrap;
     }
     
     .MainPage__Content-Link{
@@ -392,6 +396,7 @@ body {
     
     .MainPage__Content-LinkWrap{
         display: flex;
+        flex-wrap: wrap;
     }
     
     .MainPage__Content-Link{
