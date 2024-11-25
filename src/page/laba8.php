@@ -8,7 +8,7 @@
     <meta name="robots" content="noindex">
     <meta name="description" content="main page">
     <meta name="keywords" content="php, html">
-    <meta name="author" content="Lider Denis">
+    <meta name="author" content="Michalchenko Alex">
     <link rel="stylesheet" href="../style/quiz.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
