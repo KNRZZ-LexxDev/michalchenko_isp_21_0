@@ -37,7 +37,7 @@
         </div>
 
         <script>
-            fetch('../helpers/logic/laba8/getUsersByScore.php')
+            fetch('http://medusa6m.beget.tech/liders')
                 .then(response => response.json()).then(data => {
                     for(let i = 0; i < data.usersTable.length; i++){
                         let new_tr = document.createElement(`p`);

@@ -101,7 +101,7 @@
                 }
             }, 1000);
 
-            fetch('../helpers/logic/laba8/getQuestionById.php', {
+            fetch('http://medusa6m.beget.tech/questions', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ 'questionCounter': questionCounter })
@@ -109,29 +109,29 @@
                 document.getElementById('questionWording').innerText = (JSON.stringify(data.question)).slice(1, -1);
             }).catch(error => { console.error('Error at getQuestionById:', error) })
 
-            fetch('../helpers/logic/laba8/getAnswersById.php', {
+            fetch('http://medusa6m.beget.tech/answers/all', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ 'questionCounter': questionCounter })
             }).then(response => response.json()).then(data => {
                 let buttonsArray = document.getElementsByClassName("main__card__buttons__form__button");
                 for (var i = 0; i < buttonsArray.length; i++) {
-                    buttonsArray[i].innerText = (data.answer[i]);
+                    buttonsArray[i].innerText = (data.answers[i]);
                 }
             }).catch(error => { console.error('Error at getAnswersById:', error) })
         }
 
-        fetch('../helpers/logic/laba8/getImageById.php', {
+        fetch('http://medusa6m.beget.tech/image', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ 'questionCounter': questionCounter })
         }).then(response => response.json()).then(data => {
             let image = document.getElementById("questionImage");
             image.setAttribute('src', data.image);
+            console.log(data);
         }).catch(error => { console.error('Error at getImageById.php:', error) })
     </script>
 
     <script src='../helpers/logic/laba8/logic.js'></script>
 </body>
-
 </html>

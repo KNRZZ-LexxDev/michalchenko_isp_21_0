@@ -1,7 +1,7 @@
 function getAnswer(number) {
     var questionId = JSON.parse(sessionStorage.getItem("counters")).questionCounter;
 
-    fetch('../helpers/logic/laba8/getRightAnswerById.php', {
+    fetch('http://medusa6m.beget.tech/answers/right', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 'questionId': questionId })
@@ -16,7 +16,7 @@ function getAnswer(number) {
         }));
     }).catch(error => { console.error('Error at getRightAnswerById:', error) })
 
-    setTimeout(() => {location.reload()}, 500);
+    setTimeout(() => {location.reload()}, 750);
 }
 
 function clearSessionStorage() { sessionStorage.removeItem('counters'); }
@@ -25,7 +25,7 @@ function createUser() {
     var userName = document.getElementById("hiddenDiv__input").value;
     if (userName != "") {
         console.log(userName, JSON.parse(sessionStorage.getItem("counters")).rightCounter);
-        fetch('../helpers/logic/laba8/addUserToDatabase.php', {
+        fetch('http://medusa6m.beget.tech/users/add', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
