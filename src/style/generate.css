@@ -1,0 +1,62 @@
+body{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0 0 ;
+}
+
+.imagesContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(53,142,242), rgb(81,117,238));;
+}
+
+.image-box {
+    width: 25%;
+    height: 25%;
+    margin: 25px;
+    display: block;
+    position: relative;
+    border: 1px solid #ccc; /* Добавляем рамку для визуализации */
+
+}
+.image-title {
+    display: block;
+    width: 25%;
+    height: 25%;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    color: #f0f0f0;
+}
+
+.generate__daily{
+    width: 100%;
+    height: 1080px;
+    background: linear-gradient(rgb(53,142,242), rgb(81,117,238));;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.generate__daily__input{
+    width: 20%;
+    height: 50px;
+    margin: 5px;
+    border-radius: 70px 70px 1px 70px;
+    border: none;
+    padding-left: 25px;
+}
+
+.generate__daily__button{
+    width: 20%;
+    height: 50px;
+    margin: 5px;
+    border-radius: 70px 70px 1px 70px;
+    border: none;
+}
