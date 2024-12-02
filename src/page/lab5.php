@@ -34,11 +34,9 @@
                 <!-- Форма для задачи 1 -->
                 <form class="LabPage__Content-Task-Form" method="post" action="">
                     <h3 class="LabPage__Content-Head-Three">Задача 1</h3>
-                    <label class="LabPage__Content-label" for="value">Введите число:</label>
-                    <input class="LabPage__Content-Input" type="number" id="value" name="value" required>
+                    <input class="LabPage__Content-Input" type="number" id="value" name="value" required placeholder="Введите число:">
                     <br><br>
-                    <label class="LabPage__Content-label" for="numbers">Введите набор чисел (разделяйте пробелами, завершите 0):</label>
-                    <input class="LabPage__Content-Input" type="text" id="numbers" name="numbers" required>
+                    <input class="LabPage__Content-Input" type="text" id="numbers" name="numbers" required placeholder="Введите набор чисел (разделяйте пробелами, завершите 0):">
                     <br><br>
                     <button class="LabPage__Content-Button" type="submit" name="submit_task1" >Решить задачу 1</button>
                 </form>
@@ -60,18 +58,16 @@
                     }
 
                     $result = findLastGreaterThanK($K, $numbers);
-                    echo "<p>Результат задачи 1: Номер последнего числа больше $K: $result</p>";
+                    echo "<p class='LabPage__Content-Result-Text'>Результат задачи 1: Номер последнего числа больше $K: $result</p>";
                 }
                 ?>
 
                 <!-- Форма для задачи 2 -->
                 <form  class="LabPage__Content-Task-Form" method="post" action="">
                     <h3 class="LabPage__Content-Head-Three">Задача 2</h3>
-                    <label class="LabPage__Content-label" for="a">Введите число:</label>
-                    <input class="LabPage__Content-Input" type="number" step="any" id="a" name="a" required>
+                    <input class="LabPage__Content-Input" type="number" step="any" id="a" name="a" required placeholder="Введите число:">
                     <br><br>
-                    <label class="LabPage__Content-label" for="n">Введите число (> 0):</label>
-                    <input class="LabPage__Content-Input" type="number" id="n" name="n" min="1" required>
+                    <input class="LabPage__Content-Input" type="number" id="n" name="n" min="1" required placeholder="Введите число (> 0):">
                     <br><br>
                     <button class="LabPage__Content-Button" type="submit" name="submit_task2">Решить задачу 2</button>
                 </form>
@@ -90,12 +86,14 @@
                     }
 
                     $result = power($A, $N);
-                    echo "<p>Результат задачи 2: $A в степени $N: $result</p>";
+                    echo "<p class='LabPage__Content-Result-Text'>Результат задачи 2: $A в степени $N: $result</p>";
                 }
                 ?>
 
                 <br><br>
-                <a href="../index.php" class="LabPage__Link">Назад на главную страницу</a>
+                <div class='LabPage__Content-Back'>
+                    <a href="../../index.php" class="LabPage__Link">Go Home</a>
+                </div>
             </div>
         </div>
 

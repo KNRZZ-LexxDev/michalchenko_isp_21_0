@@ -58,9 +58,9 @@
                 }
 
                 if (areExactlyTwoPositive($A, $B, $C)) {
-                    echo "<p class='answer__text'>TRUE</p>";
+                    echo "<p class='LabPage__Content-Result-Text'>TRUE</p>";
                 } else {
-                    echo "<p class='answer__text'>FALSE</p>";
+                    echo "<p class='LabPage__Content-Result-Text'>FALSE</p>";
                 }
             }
             ?>
@@ -87,7 +87,7 @@
                 }
 
                 $sum = sumOfTwoLargest($A2, $B2, $C2);
-                echo "<p class='answer__text'>Сумма двух наибольших чисел: $sum</p>";
+                echo "<p class='LabPage__Content-Result-Text'>Сумма двух наибольших чисел: $sum</p>";
             }
             ?>
 
@@ -112,15 +112,15 @@
                         switch (true) {
                             case $x >= 1:
                                 $y = exp($x) + 1;
-                                echo "<p class='answer__text'>ветка 1 и корень равен {$y} при аргументе {$x}</p>";
+                                echo "<p class='LabPage__Content-Result-Text'>ветка 1 и корень равен {$y} при аргументе {$x}</p>";
                                 break;
                             case $x > 0 && $x < 1:
                                 $y = cos(sqrt($a * $x)) ** 2; // Исправлено
-                                echo "<p class='answer__text'>ветка 2 и корень равен {$y} при аргументе {$x}</p>";
+                                echo "<p class='LabPage__Content-Result-Text'>ветка 2 и корень равен {$y} при аргументе {$x}</p>";
                                 break;
                             case $x <= 0:
                                 $y = log($b + sqrt(abs($x)));
-                                echo "<p class='answer__text'>ветка 3 и корень равен {$y} при аргументе {$x}</p>";
+                                echo "<p class='LabPage__Content-Result-Text'>ветка 3 и корень равен {$y} при аргументе {$x}</p>";
                                 break;
                         }
                     }
@@ -148,15 +148,15 @@
                         switch (true) {
                             case $x >= 1:
                                 $y = exp($x) + 1;
-                                echo "<p class='answer__text'>ветка 1 и корень равен {$y} при аргументе {$x}</p>";
+                                echo "<p class='LabPage__Content-Result-Text'>ветка 1 и корень равен {$y} при аргументе {$x}</p>";
                                 break;
                             case $x > 0 && $x < 1:
                                 $y = cos(sqrt($a * $x)) ** 2; // Исправлено
-                                echo "<p class='answer__text'>ветка 2 и корень равен {$y} при аргументе {$x}</p>";
+                                echo "<p class='LabPage__Content-Result-Text'>ветка 2 и корень равен {$y} при аргументе {$x}</p>";
                                 break;
                             case $x <= 0:
                                 $y = log($b + sqrt(abs($x)));
-                                echo "<p class='answer__text'>ветка 3 и корень равен {$y} при аргументе {$x}</p>";
+                                echo "<p class='LabPage__Content-Result-Text'>ветка 3 и корень равен {$y} при аргументе {$x}</p>";
                                 break;
                         }
                     }
@@ -166,7 +166,9 @@
                 ?>
 
                 <br><br>
-                <a href="../index.php" class="LabPage__Link">Назад на главную страницу</a>
+                <div class='LabPage__Content-Back'>
+                    <a href="../../index.php" class="LabPage__Link">Go Home</a>
+                </div>
             </div>
         </div>
 
@@ -174,6 +176,5 @@
             include_once ('../components/footer.php');
             all_footer('lab4');
         ?>
-
     </body>
 </html>

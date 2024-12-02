@@ -2,11 +2,13 @@
     function all_footer($page) {
 
         $main = '<div class="MainPage__Footer">' . 
-                    '<p class="MainPage__Footer-text">Все права защищены 2024 &#169</p>' .
+                    '<p class="MainPage__Footer-text">© 2024 Subtle Folio Framer Template</p>' .
+                    '<p class="MainPage__Footer-text"> by Nur Praditya // MorvaLabs // Framer</p>' .
                 '</div>';
 
         $lab = '<div class="LabPage__Footer">' .
-                    '<p class="LabPage__Footer-text">Все права защищены 2024 &#169</p>' .
+                    '<p class="LabPage__Footer-text">© 2024 Subtle Folio Framer Template</p>' .
+                    '<p class="LabPage__Footer-text"> by Nur Praditya // MorvaLabs // Framer</p>' .
                 '</div>';
 
         switch($page){
@@ -30,9 +32,9 @@
                 echo $lab;
                 break;
 
-            // case 'lab3':
-            //     echo $lab;
-            //     break;
+            case 'lab7':
+                echo $lab;
+                break;
 
             default:
                 return;

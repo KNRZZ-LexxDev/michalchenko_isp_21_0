@@ -7,7 +7,7 @@
         <meta name="description" content="Веб-сайт для лабораторных работ">
         <meta name="keywords" content="Лабораторная, Михальченко">
         <title>Лабораторная работа 6</title>
-        <link rel="stylesheet" type="text/css" href="../style/lab5.css">
+        <link rel="stylesheet" type="text/css" href="../style/lab6.css">
     </head>
 
     <body>
@@ -36,9 +36,9 @@
                 $l = intval($_POST['l']);
                 
                 if ($k >= 1 && $l <= count($array) && $k <= $l) {
-                    $resultTask1 = 'Сумма элементов: ' . task1($array, $k, $l);
+                    $resultTask1 = "<p class='LabPage__Content-Result-Text'> Сумма элементов: " . task1($array, $k, $l) ."</p>";
                 } else {
-                    $resultTask1 = 'Ошибка: некорректные значения K и L.';
+                    $resultTask1 = "<p class='LabPage__Content-Result-Text'> Ошибка: некорректные значения K и L. </p>";
                 }
             }
 
@@ -48,9 +48,9 @@
                 $l = intval($_POST['l']);
                 
                 if ($k >= 1 && $l <= count($array) && $k < $l) {
-                    $resultTask2 = 'Новый массив: ' . implode(', ', task2($array, $k, $l));
+                    $resultTask2 = "<p class='LabPage__Content-Result-Text'> Новый массив: " . implode(', ', task2($array, $k, $l)) ."</p>";
                 } else {
-                    $resultTask2 = 'Ошибка: некорректные значения K и L.';
+                    $resultTask2 = "<p class='LabPage__Content-Result-Text'> Ошибка: некорректные значения K и L. </p>";
                 }
             }
         }
@@ -72,12 +72,9 @@
                 <!— Форма для задачи 1 —>
                 <form class="LabPage__Content-Task-Form" method="post" action="">
                     <h3 class="LabPage__Content-Head-Three">Задача 1</h3>
-                    <label for="array">Введите массив (через запятую):</label>
-                    <input type="text" name="array" required>
-                    <label for="k">Введите K:</label>
-                    <input type="number" name="k" required>
-                    <label for="l">Введите L:</label>
-                    <input type="number" name="l" required>
+                    <input class="LabPage__Content-Input" type="text" name="array" required placeholder="Введите массив (через запятую):">
+                    <input class="LabPage__Content-Input" type="number" name="k" required placeholder="Введите K:">
+                    <input class="LabPage__Content-Input" type="number" name="l" required placeholder="Введите L:">
                     <button class="LabPage__Content-Button" type="submit" name="submit_task1">Решить задачу 1</button>
                 </form>
 
@@ -88,12 +85,9 @@
                 <!— Форма для задачи 2 —>
                 <form class="LabPage__Content-Task-Form" method="post" action="">
                     <h3 class="LabPage__Content-Head-Three">Задача 2</h3>
-                    <label for="array">Введите массив (через запятую):</label>
-                    <input type="text" name="array" required>
-                    <label for="k">Введите K:</label>
-                    <input type="number" name="k" required>
-                    <label for="l">Введите L:</label>
-                    <input type="number" name="l" required>
+                    <input class="LabPage__Content-Input" type="text" name="array" required placeholder="Введите массив (через запятую):">
+                    <input class="LabPage__Content-Input" type="number" name="k" required placeholder="Введите K:">
+                    <input class="LabPage__Content-Input" type="number" name="l" required placeholder="Введите L:">
                     <button class="LabPage__Content-Button" type="submit" name="submit_task2">Решить задачу 2</button>
                 </form>
 
@@ -102,7 +96,9 @@
                 <?php endif; ?>
 
                 <br><br>
-                <a href="../index.php" class="LabPage__Link">Назад на главную страницу</a>
+                <div class='LabPage__Content-Back'>
+                    <a href="../../index.php" class="LabPage__Link">Go Home</a>
+                </div>
             </div>
         </div>
 

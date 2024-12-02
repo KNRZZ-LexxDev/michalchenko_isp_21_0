@@ -7,14 +7,13 @@
         <meta name="description" content="Веб-сайт для лабораторных работ">
         <meta name="keywords" content="Лабораторная, Михальченко">
         <title>Лабораторная работа 3</title>
-        <link rel="stylesheet" type="text/css" href="../style/lab3.css"> <!-- Подключаем CSS файл, если нужно -->
+        <link rel="stylesheet" type="text/css" href='../style/lab3.css'> <!-- Подключаем CSS файл, если нужно -->
     </head>
 
     <body>
-
         <?php 
-            include_once ('../components/header.php');
-            all_header('lab3');
+            include('../components/header.php');
+            all_header("lab3");
         ?>
 
         <div class="LabPage__Content">
@@ -40,8 +39,8 @@
                         if (isset($_POST['calculateCircle'])) {
                             $S = $_POST['circleArea'];
                             $result = calculateCircleProperties($S);
-                            echo "<p>Диаметр D: " . round($result['Diameter'], 2) . "</p>";
-                            echo "<p>Длина окружности L: " . round($result['Length'], 2) . "</p>";
+                            echo "<p class='LabPage__Content-Result-Text'> Диаметр D: " . round($result['Diameter'], 2) . "</p>";
+                            echo "<p class='LabPage__Content-Result-Text'> Длина окружности L: " . round($result['Length'], 2) . "</p>";
                         }
                     ?>
                 </form>
@@ -56,20 +55,16 @@
                         if (isset($_POST['swapDigits'])) {
                             $number = $_POST['threeDigitNumber'];
                             $result = swapDigits($number);
-                            echo "<p>Результат: " . $result . "</p>";
+                            echo "<p class='LabPage__Content-Result-Text'>Результат: " . $result . "</p>";
                         }
                     ?>
                 </form>
-
                 <br><br>
-                <a href="../index.php" class="LabPage__Link">Назад на главную страницу</a>
+                <div class='LabPage__Content-Back'>
+                    <a href="../../index.php" class="LabPage__Link">Go Home</a>
+                </div>
             </div>
         </div>
-
-        <?php 
-            include_once ('../components/footer.php');
-            all_footer('lab3');
-        ?>
 
         <?php
             // Задача 1: Площадь круга
@@ -98,5 +93,9 @@
             }
         ?>
 
+        <?php 
+            include('../components/footer.php');
+            all_footer("lab3");
+        ?>
     </body>
 </html>

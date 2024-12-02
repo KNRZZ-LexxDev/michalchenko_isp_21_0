@@ -1,0 +1,1768 @@
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #161616;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.MainPage__Header{
+    margin-top: 50px;
+    width: 566px;
+    height: 78px;
+    background: #212121;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    border: 1px solid #7f7f7f;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.MainPage__Home{
+    width: 24px;
+    height: 24px;
+    background: url(../img/home.png);
+    background-position: center;
+    background-size: cover;
+    margin: 25px;
+}
+
+.MainPage__Home:hover{
+    width: 24px;
+    height: 24px;
+    background: url(../img/homeHover.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.MainPage__User{
+    width: 28px;
+    height: 28px;
+    background: url(../img/user.png);
+    background-position: center;
+    background-size: cover;
+    margin: 25px;
+}
+
+.MainPage__User:hover{
+    width: 28px;
+    height: 28px;
+    background: url(../img/userHover.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.MainPage__Project{
+    width: 28px;
+    height: 28px;
+    background: url(../img/pj.png);
+    background-position: center;
+    background-size: cover;
+    margin: 25px;
+}
+
+.MainPage__Project:hover{
+    width: 28px;
+    height: 28px;
+    background: url(../img/pjHover.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.MainPage__Button{
+    width: 92px;
+    height: 36px;
+    color: #F7F7F7;
+    background: #383838;
+    border: none;
+    border-radius: 5px;
+    margin-right: 16px;
+    margin-left: auto;
+}
+
+.MainPage__Header-text{
+    color:#F0F0F0;
+    font-size: 64px;
+    animation: blinker 3s linear infinite;    
+}
+
+
+/* navigation.php стили */
+
+.MainPage__Content{
+    width: 566px;
+    height: auto;
+    background: #212121;
+    margin-top: 20px;
+    border-radius: 25px;
+    border: 1px solid #7f7f7f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    transform: translateY(50px); /* Начальное смещение вниз */
+    animation: slideIn 1s forwards; /* Запуск анимации */
+    
+}
+
+.MainPage__Content-Head{
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+/* .MainPage__Content-Author{
+    font-size: 48px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    color: #0f0f0f;
+} */
+
+.MainPage__Content-Description{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    color: #c0c0c0
+}
+
+.MainPage__Content-About-Work-Wrap{
+    width: 80%;
+    height: auto;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.MainPage__Content-About-Work-Pos{
+    font-size: 20px;
+    color: #c0c0c0;
+}
+
+.MainPage__Content-About-Work-Pos::marker{
+    color: #383838;
+}
+
+.MainPage__Content-About-Work-Access{
+    font-size: 12px;
+    background-color: rgba(40, 199, 128, 0.15);
+    border-radius: 63.36px;
+    opacity: 1;
+    color: rgb(3, 151, 84, 1);
+    padding: 6px 12px 6px 8px;
+}
+
+.MainPage__Content-About-Me-Wrap{
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+}
+
+.MainPage__Content-About-Me-Text-Wrap{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.MainPage-About-Me-Image-Wrap{
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainPage-About-Me-Image-Background{
+    background: #f7f7f7;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.MainPage-About-Me-Image{
+    width: 160px;
+    height: 160px;
+    background: url('../img/me.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.MainPage__Content-About-Buttons-Wrap{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: auto;
+    height: auto;
+}
+
+.MainPage__Content-Hire-Button{
+    width: 92px;
+    height: 36px;
+    color: #F7F7F7;
+    background: #383838;
+    border: none;
+    border-radius: 5px;
+    margin-right: 16px;
+    margin-left: auto;
+}
+
+.MainPage__Content-Copy-Button{
+    width: 92px;
+    height: 36px;
+    color: #F7F7F7;
+    background: #212121;
+    border: 1px solid #f7f7f7;
+    border-radius: 5px;
+    margin-right: 16px;
+    margin-left: auto;
+}
+
+/* Project Styles*/
+
+
+.MainPage__Content-Link-Wrap{
+    width: 95%;
+    margin: 10px auto;
+    background: rgba(41,41,41,1);
+    border-radius: 25px;
+    border: 1px solid #7f7f7f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.MainPage__Content-Link{
+    margin: 50px;
+    text-decoration: none;
+    color: #8a8a8a;
+}
+
+.MainPage__Content-Link:hover{
+    margin: 50px;
+    text-decoration: none;
+    color: #8a8a8a;
+    animation: blinker 1s linear infinite;    
+}
+
+.MainPage__Content-Link-Head-Wrap{
+    width: 80%;
+    height: auto;
+    margin: 15px auto;
+}
+
+.MainPage__Content-Link-Mark{
+    font-size: 20px;
+    color: #c0c0c0;
+}
+
+.MainPage__Content-Link-Mark::marker{
+    color: #383838;
+}
+
+.MainPage__Content-Link-Head{
+    width: auto;
+    height: auto;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.MainPage__Content-Link-Desc{
+    padding-left: 20px;
+    color: rgb(22,22,22);
+    font-size: 18px;
+}
+
+
+.MainPage__Content-Lab-Wrap{
+    width: 80%;
+    height: 96px;
+    background: rgb(66, 66, 66);
+    border-radius: 12px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+/* СallAction Styles */
+.MainPage__CallAction-Wrap{
+    width: 566px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+}
+
+.MainPage__CallAction-Head{
+    color: #ffffff;
+    font-size: 36px;
+}
+
+.MainPage__CallAction-Desc{
+    color: #c0c0c0;
+    font-size: 18px;
+}
+
+/* Footer Styles */
+
+.MainPage__Footer{
+    width: 566px;
+    height: 78px;
+    background: rgba(41,41,41,1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 25px;
+    margin-top: 20px;
+    border-radius: 25px;
+    border: 1px solid #7f7f7f;
+}
+
+.MainPage__Footer-text{
+    text-align: center;
+    font-size: 14px;
+    color: #a0a0a0;
+}
+
+@media (min-width: 992px) and (max-width: 1280px) {
+    @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+    }
+    
+    
+    *{
+        box-sizing: border-box;
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background: #161616;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    
+    .MainPage__Header{
+        margin-top: 50px;
+        width: 566px;
+        height: 78px;
+        background: #212121;
+        display: flex;
+        align-items: center;
+        padding-left: 25px;
+        border: 1px solid #7f7f7f;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .MainPage__Home{
+        width: 24px;
+        height: 24px;
+        background: url(../img/home.png);
+        background-position: center;
+        background-size: cover;
+        margin: 25px;
+    }
+    
+    .MainPage__Home:hover{
+        width: 24px;
+        height: 24px;
+        background: url(../img/homeHover.png);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    
+    .MainPage__User{
+        width: 28px;
+        height: 28px;
+        background: url(../img/user.png);
+        background-position: center;
+        background-size: cover;
+        margin: 25px;
+    }
+    
+    .MainPage__User:hover{
+        width: 28px;
+        height: 28px;
+        background: url(../img/userHover.png);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .MainPage__Project{
+        width: 28px;
+        height: 28px;
+        background: url(../img/pj.png);
+        background-position: center;
+        background-size: cover;
+        margin: 25px;
+    }
+    
+    .MainPage__Project:hover{
+        width: 28px;
+        height: 28px;
+        background: url(../img/pjHover.png);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .MainPage__Button{
+        width: 92px;
+        height: 36px;
+        color: #F7F7F7;
+        background: #383838;
+        border: none;
+        border-radius: 5px;
+        margin-right: 16px;
+        margin-left: auto;
+    }
+    
+    .MainPage__Header-text{
+        color:#F0F0F0;
+        font-size: 64px;
+        animation: blinker 3s linear infinite;    
+    }
+    
+    
+    /* navigation.php стили */
+    
+    .MainPage__Content{
+        width: 566px;
+        height: auto;
+        background: #212121;
+        margin-top: 20px;
+        border-radius: 25px;
+        border: 1px solid #7f7f7f;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap:nowrap;
+        
+    }
+    
+    .MainPage__Content-Head{
+        font-size: 36px;
+        color: #ffffff;
+        margin-bottom: 15px;
+    }
+    
+    /* .MainPage__Content-Author{
+        font-size: 48px;
+        margin-bottom: 15px;
+        margin-top: 0px;
+        color: #0f0f0f;
+    } */
+    
+    .MainPage__Content-Description{
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        color: #c0c0c0
+    }
+    
+    .MainPage__Content-About-Work-Wrap{
+        width: 80%;
+        height: auto;
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+    .MainPage__Content-About-Work-Pos{
+        font-size: 20px;
+        color: #c0c0c0;
+    }
+    
+    .MainPage__Content-About-Work-Pos::marker{
+        color: #383838;
+    }
+    
+    .MainPage__Content-About-Work-Access{
+        font-size: 12px;
+        background-color: rgba(40, 199, 128, 0.15);
+        border-radius: 63.36px;
+        opacity: 1;
+        color: rgb(3, 151, 84, 1);
+        padding: 6px 12px 6px 8px;
+    }
+    
+    .MainPage__Content-About-Me-Wrap{
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+        display: flex;
+    }
+    
+    .MainPage__Content-About-Me-Text-Wrap{
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+    }
+    
+    .MainPage-About-Me-Image-Wrap{
+        width: 40%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .MainPage-About-Me-Image-Background{
+        background: #f7f7f7;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+    }
+    
+    .MainPage-About-Me-Image{
+        width: 160px;
+        height: 160px;
+        background: url('../img/me.png');
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .MainPage__Content-About-Buttons-Wrap{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: auto;
+        height: auto;
+    }
+    
+    .MainPage__Content-Hire-Button{
+        width: 92px;
+        height: 36px;
+        color: #F7F7F7;
+        background: #383838;
+        border: none;
+        border-radius: 5px;
+        margin-right: 16px;
+        margin-left: auto;
+    }
+    
+    .MainPage__Content-Copy-Button{
+        width: 92px;
+        height: 36px;
+        color: #F7F7F7;
+        background: #212121;
+        border: 1px solid #f7f7f7;
+        border-radius: 5px;
+        margin-right: 16px;
+        margin-left: auto;
+    }
+    
+    /* Project Styles*/
+    
+    
+    .MainPage__Content-Link-Wrap{
+        width: 95%;
+        margin: 10px auto;
+        background: rgba(41,41,41,1);
+        border-radius: 25px;
+        border: 1px solid #7f7f7f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .MainPage__Content-Link{
+        margin: 50px;
+        text-decoration: none;
+        color: #8a8a8a;
+    }
+    
+    .MainPage__Content-Link:hover{
+        margin: 50px;
+        text-decoration: none;
+        color: #8a8a8a;
+        animation: blinker 1s linear infinite;    
+    }
+    
+    .MainPage__Content-Link-Head-Wrap{
+        width: 80%;
+        height: auto;
+        margin: 15px auto;
+    }
+    
+    .MainPage__Content-Link-Mark{
+        font-size: 20px;
+        color: #c0c0c0;
+    }
+    
+    .MainPage__Content-Link-Mark::marker{
+        color: #383838;
+    }
+    
+    .MainPage__Content-Link-Head{
+        width: auto;
+        height: auto;
+        color: #ffffff;
+        font-size: 20px;
+        text-decoration: none;
+        padding-left: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .MainPage__Content-Link-Desc{
+        padding-left: 20px;
+        color: rgb(22,22,22);
+        font-size: 18px;
+    }
+    
+    
+    .MainPage__Content-Lab-Wrap{
+        width: 80%;
+        height: 96px;
+        background: rgb(66, 66, 66);
+        border-radius: 12px;
+        margin: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+    }
+    
+    /* СallAction Styles */
+    .MainPage__CallAction-Wrap{
+        width: 566px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 25px auto;
+    }
+    
+    .MainPage__CallAction-Head{
+        color: #ffffff;
+        font-size: 36px;
+    }
+    
+    .MainPage__CallAction-Desc{
+        color: #c0c0c0;
+        font-size: 18px;
+    }
+    
+    /* Footer Styles */
+    
+    .MainPage__Footer{
+        width: 566px;
+        height: 78px;
+        background: rgba(41,41,41,1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 25px;
+        margin-top: 20px;
+        border-radius: 25px;
+        border: 1px solid #7f7f7f;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+    }
+    
+    
+    *{
+        box-sizing: border-box;
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background: #161616;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    
+    .MainPage__Header{
+        margin-top: 50px;
+        width: 566px;
+        height: 78px;
+        background: #212121;
+        display: flex;
+        align-items: center;
+        padding-left: 25px;
+        border: 1px solid #7f7f7f;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .MainPage__Home{
+        width: 24px;
+        height: 24px;
+        background: url(../img/home.png);
+        background-position: center;
+        background-size: cover;
+        margin: 25px;
+    }
+    
+    .MainPage__Home:hover{
+        width: 24px;
+        height: 24px;
+        background: url(../img/homeHover.png);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    
+    .MainPage__User{
+        width: 28px;
+        height: 28px;
+        background: url(../img/user.png);
+        background-position: center;
+        background-size: cover;
+        margin: 25px;
+    }
+    
+    .MainPage__User:hover{
+        width: 28px;
+        height: 28px;
+        background: url(../img/userHover.png);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .MainPage__Project{
+        width: 28px;
+        height: 28px;
+        background: url(../img/pj.png);
+        background-position: center;
+        background-size: cover;
+        margin: 25px;
+    }
+    
+    .MainPage__Project:hover{
+        width: 28px;
+        height: 28px;
+        background: url(../img/pjHover.png);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .MainPage__Button{
+        width: 92px;
+        height: 36px;
+        color: #F7F7F7;
+        background: #383838;
+        border: none;
+        border-radius: 5px;
+        margin-right: 16px;
+        margin-left: auto;
+    }
+    
+    .MainPage__Header-text{
+        color:#F0F0F0;
+        font-size: 64px;
+        animation: blinker 3s linear infinite;    
+    }
+    
+    
+    /* navigation.php стили */
+    
+    .MainPage__Content{
+        width: 566px;
+        height: auto;
+        background: #212121;
+        margin-top: 20px;
+        border-radius: 25px;
+        border: 1px solid #7f7f7f;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap:nowrap;
+        
+    }
+    
+    .MainPage__Content-Head{
+        font-size: 36px;
+        color: #ffffff;
+        margin-bottom: 15px;
+    }
+    
+    /* .MainPage__Content-Author{
+        font-size: 48px;
+        margin-bottom: 15px;
+        margin-top: 0px;
+        color: #0f0f0f;
+    } */
+    
+    .MainPage__Content-Description{
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        color: #c0c0c0
+    }
+    
+    .MainPage__Content-About-Work-Wrap{
+        width: 80%;
+        height: auto;
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+    .MainPage__Content-About-Work-Pos{
+        font-size: 20px;
+        color: #c0c0c0;
+    }
+    
+    .MainPage__Content-About-Work-Pos::marker{
+        color: #383838;
+    }
+    
+    .MainPage__Content-About-Work-Access{
+        font-size: 12px;
+        background-color: rgba(40, 199, 128, 0.15);
+        border-radius: 63.36px;
+        opacity: 1;
+        color: rgb(3, 151, 84, 1);
+        padding: 6px 12px 6px 8px;
+    }
+    
+    .MainPage__Content-About-Me-Wrap{
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+        display: flex;
+    }
+    
+    .MainPage__Content-About-Me-Text-Wrap{
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+    }
+    
+    .MainPage-About-Me-Image-Wrap{
+        width: 40%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .MainPage-About-Me-Image-Background{
+        background: #f7f7f7;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+    }
+    
+    .MainPage-About-Me-Image{
+        width: 160px;
+        height: 160px;
+        background: url('../img/me.png');
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .MainPage__Content-About-Buttons-Wrap{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: auto;
+        height: auto;
+    }
+    
+    .MainPage__Content-Hire-Button{
+        width: 92px;
+        height: 36px;
+        color: #F7F7F7;
+        background: #383838;
+        border: none;
+        border-radius: 5px;
+        margin-right: 16px;
+        margin-left: auto;
+    }
+    
+    .MainPage__Content-Copy-Button{
+        width: 92px;
+        height: 36px;
+        color: #F7F7F7;
+        background: #212121;
+        border: 1px solid #f7f7f7;
+        border-radius: 5px;
+        margin-right: 16px;
+        margin-left: auto;
+    }
+    
+    /* Project Styles*/
+    
+    
+    .MainPage__Content-Link-Wrap{
+        width: 95%;
+        margin: 10px auto;
+        background: rgba(41,41,41,1);
+        border-radius: 25px;
+        border: 1px solid #7f7f7f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .MainPage__Content-Link{
+        margin: 50px;
+        text-decoration: none;
+        color: #8a8a8a;
+    }
+    
+    .MainPage__Content-Link:hover{
+        margin: 50px;
+        text-decoration: none;
+        color: #8a8a8a;
+        animation: blinker 1s linear infinite;    
+    }
+    
+    .MainPage__Content-Link-Head-Wrap{
+        width: 80%;
+        height: auto;
+        margin: 15px auto;
+    }
+    
+    .MainPage__Content-Link-Mark{
+        font-size: 20px;
+        color: #c0c0c0;
+    }
+    
+    .MainPage__Content-Link-Mark::marker{
+        color: #383838;
+    }
+    
+    .MainPage__Content-Link-Head{
+        width: auto;
+        height: auto;
+        color: #ffffff;
+        font-size: 20px;
+        text-decoration: none;
+        padding-left: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .MainPage__Content-Link-Desc{
+        padding-left: 20px;
+        color: rgb(22,22,22);
+        font-size: 18px;
+    }
+    
+    
+    .MainPage__Content-Lab-Wrap{
+        width: 80%;
+        height: 96px;
+        background: rgb(66, 66, 66);
+        border-radius: 12px;
+        margin: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+    }
+    
+    /* СallAction Styles */
+    .MainPage__CallAction-Wrap{
+        width: 566px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 25px auto;
+    }
+    
+    .MainPage__CallAction-Head{
+        color: #ffffff;
+        font-size: 36px;
+    }
+    
+    .MainPage__CallAction-Desc{
+        color: #c0c0c0;
+        font-size: 18px;
+    }
+    
+    /* Footer Styles */
+    
+    .MainPage__Footer{
+        width: 566px;
+        height: 78px;
+        background: rgba(41,41,41,1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 25px;
+        margin-top: 20px;
+        border-radius: 25px;
+        border: 1px solid #7f7f7f;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+    }
+    
+    
+    *{
+        box-sizing: border-box;
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+    
+    body {
+        width: 100%;
+        font-family: Arial, sans-serif;
+        background: #161616;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    
+    .MainPage__Header{
+        margin-top: 50px;
+        width: 460px;
+        height: 78px;
+        background: #212121;
+        display: flex;
+        align-items: center;
+        padding-left: 25px;
+        border: 1px solid #7f7f7f;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .MainPage__Home{
+        width: 24px;
+        height: 24px;
+        background: url(../img/home.png);
+        background-position: center;
+        background-size: cover;
+        margin: 25px;
+    }
+    
+    .MainPage__Home:hover{
+        width: 24px;
+        height: 24px;
+        background: url(../img/homeHover.png);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    
+    .MainPage__User{
+        width: 28px;
+        height: 28px;
+        background: url(../img/user.png);
+        background-position: center;
+        background-size: cover;
+        margin: 25px;
+    }
+    
+    .MainPage__User:hover{
+        width: 28px;
+        height: 28px;
+        background: url(../img/userHover.png);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .MainPage__Project{
+        width: 28px;
+        height: 28px;
+        background: url(../img/pj.png);
+        background-position: center;
+        background-size: cover;
+        margin: 25px;
+    }
+    
+    .MainPage__Project:hover{
+        width: 28px;
+        height: 28px;
+        background: url(../img/pjHover.png);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .MainPage__Button{
+        width: 92px;
+        height: 36px;
+        color: #F7F7F7;
+        background: #383838;
+        border: none;
+        border-radius: 5px;
+        margin-right: 16px;
+        margin-left: auto;
+    }
+    
+    .MainPage__Header-text{
+        color:#F0F0F0;
+        font-size: 64px;
+        animation: blinker 3s linear infinite;    
+    }
+    
+    
+    /* navigation.php стили */
+    
+    .MainPage__Content{
+        width: 460px;
+        height: auto;
+        background: #212121;
+        margin-top: 20px;
+        border-radius: 25px;
+        border: 1px solid #7f7f7f;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap:nowrap;
+        
+    }
+    
+    .MainPage__Content-Head{
+        font-size: 36px;
+        color: #ffffff;
+        margin-bottom: 15px;
+    }
+    
+    /* .MainPage__Content-Author{
+        font-size: 48px;
+        margin-bottom: 15px;
+        margin-top: 0px;
+        color: #0f0f0f;
+    } */
+    
+    .MainPage__Content-Description{
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        color: #c0c0c0
+    }
+    
+    .MainPage__Content-About-Work-Wrap{
+        width: 95%;
+        height: auto;
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+    .MainPage__Content-About-Work-Pos{
+        font-size: 20px;
+        color: #c0c0c0;
+    }
+    
+    .MainPage__Content-About-Work-Pos::marker{
+        color: #383838;
+    }
+    
+    .MainPage__Content-About-Work-Access{
+        font-size: 12px;
+        background-color: rgba(40, 199, 128, 0.15);
+        border-radius: 63.36px;
+        opacity: 1;
+        color: rgb(3, 151, 84, 1);
+        padding: 6px 12px 6px 8px;
+    }
+    
+    .MainPage__Content-About-Me-Wrap{
+        width: 95%;
+        height: auto;
+        margin-top: 20px;
+        display: flex;
+    }
+    
+    .MainPage__Content-About-Me-Text-Wrap{
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+    }
+    
+    .MainPage-About-Me-Image-Wrap{
+        width: 40%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .MainPage-About-Me-Image-Background{
+        background: #f7f7f7;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+    }
+    
+    .MainPage-About-Me-Image{
+        width: 160px;
+        height: 160px;
+        background: url('../img/me.png');
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .MainPage__Content-About-Buttons-Wrap{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: auto;
+        height: auto;
+    }
+    
+    .MainPage__Content-Hire-Button{
+        width: 92px;
+        height: 36px;
+        color: #F7F7F7;
+        background: #383838;
+        border: none;
+        border-radius: 5px;
+        margin-right: 16px;
+        margin-left: auto;
+    }
+    
+    .MainPage__Content-Copy-Button{
+        width: 92px;
+        height: 36px;
+        color: #F7F7F7;
+        background: #212121;
+        border: 1px solid #f7f7f7;
+        border-radius: 5px;
+        margin-right: 16px;
+        margin-left: auto;
+    }
+    
+    /* Project Styles*/
+    
+    
+    .MainPage__Content-Link-Wrap{
+        width: 95%;
+        margin: 10px auto;
+        background: rgba(41,41,41,1);
+        border-radius: 25px;
+        border: 1px solid #7f7f7f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .MainPage__Content-Link{
+        margin: 50px;
+        text-decoration: none;
+        color: #8a8a8a;
+    }
+    
+    .MainPage__Content-Link:hover{
+        margin: 50px;
+        text-decoration: none;
+        color: #8a8a8a;
+        animation: blinker 1s linear infinite;    
+    }
+    
+    .MainPage__Content-Link-Head-Wrap{
+        width: 80%;
+        height: auto;
+        margin: 15px auto;
+    }
+    
+    .MainPage__Content-Link-Mark{
+        font-size: 20px;
+        color: #c0c0c0;
+    }
+    
+    .MainPage__Content-Link-Mark::marker{
+        color: #383838;
+    }
+    
+    .MainPage__Content-Link-Head{
+        width: auto;
+        height: auto;
+        color: #ffffff;
+        font-size: 20px;
+        text-decoration: none;
+        padding-left: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .MainPage__Content-Link-Desc{
+        padding-left: 20px;
+        color: rgb(22,22,22);
+        font-size: 18px;
+    }
+    
+    
+    .MainPage__Content-Lab-Wrap{
+        width: 80%;
+        height: 96px;
+        background: rgb(66, 66, 66);
+        border-radius: 12px;
+        margin: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+    }
+    
+    /* СallAction Styles */
+    .MainPage__CallAction-Wrap{
+        width: 460px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 25px auto;
+    }
+    
+    .MainPage__CallAction-Head{
+        color: #ffffff;
+        font-size: 36px;
+    }
+    
+    .MainPage__CallAction-Desc{
+        color: #c0c0c0;
+        font-size: 18px;
+    }
+    
+    /* Footer Styles */
+    
+    .MainPage__Footer{
+        width: 460px;
+        height: 78px;
+        background: rgba(41,41,41,1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 25px;
+        margin-top: 20px;
+        border-radius: 25px;
+        border: 1px solid #7f7f7f;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+    }
+    
+    
+    *{
+        box-sizing: border-box;
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+    
+    body {
+        width: 100%;
+        font-family: Arial, sans-serif;
+        background: #161616;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    
+    .MainPage__Header{
+        margin-top: 50px;
+        width: 300px;
+        height: 78px;
+        background: #212121;
+        display: flex;
+        align-items: center;
+        padding-left: 0px;
+        border: 1px solid #7f7f7f;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .MainPage__Home{
+        width: 24px;
+        height: 24px;
+        background: url(../img/home.png);
+        background-position: center;
+        background-size: cover;
+        margin: 15px;
+    }
+    
+    .MainPage__Home:hover{
+        width: 24px;
+        height: 24px;
+        background: url(../img/homeHover.png);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    
+    .MainPage__User{
+        width: 28px;
+        height: 28px;
+        background: url(../img/user.png);
+        background-position: center;
+        background-size: cover;
+        margin: 15px;
+    }
+    
+    .MainPage__User:hover{
+        width: 28px;
+        height: 28px;
+        background: url(../img/userHover.png);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .MainPage__Project{
+        width: 28px;
+        height: 28px;
+        background: url(../img/pj.png);
+        background-position: center;
+        background-size: cover;
+        margin: 15px;
+    }
+    
+    .MainPage__Project:hover{
+        width: 28px;
+        height: 28px;
+        background: url(../img/pjHover.png);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .MainPage__Button{
+        width: 92px;
+        height: 36px;
+        color: #F7F7F7;
+        background: #383838;
+        border: none;
+        border-radius: 5px;
+        margin-right: 16px;
+        margin-left: auto;
+    }
+    
+    .MainPage__Header-text{
+        color:#F0F0F0;
+        font-size: 64px;
+        animation: blinker 3s linear infinite;    
+    }
+    
+    
+    /* navigation.php стили */
+    
+    .MainPage__Content{
+        width: 300px;
+        height: auto;
+        background: #212121;
+        margin-top: 20px;
+        border-radius: 25px;
+        border: 1px solid #7f7f7f;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap:nowrap;
+        
+    }
+    
+    .MainPage__Content-Head{
+        font-size: 36px;
+        color: #ffffff;
+        margin-bottom: 15px;
+    }
+    
+    /* .MainPage__Content-Author{
+        font-size: 48px;
+        margin-bottom: 15px;
+        margin-top: 0px;
+        color: #0f0f0f;
+    } */
+    
+    .MainPage__Content-Description{
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        color: #c0c0c0
+    }
+    
+    .MainPage__Content-About-Work-Wrap{
+        width: 95%;
+        height: auto;
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    
+    .MainPage__Content-About-Work-Pos{
+        font-size: 18px;
+        color: #c0c0c0;
+        margin: 5px;
+    }
+    
+    .MainPage__Content-About-Work-Pos::marker{
+        color: #383838;
+    }
+    
+    .MainPage__Content-About-Work-Access{
+        font-size: 12px;
+        background-color: rgba(40, 199, 128, 0.15);
+        border-radius: 63.36px;
+        opacity: 1;
+        color: rgb(3, 151, 84, 1);
+        padding: 12px 24px 12px 16px;
+        margin: 5px;
+    }
+    
+    .MainPage__Content-About-Me-Wrap{
+        width: 95%;
+        height: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .MainPage__Content-About-Me-Text-Wrap{
+        display: flex;
+        flex-direction: column;
+        margin-right: 0px;
+        margin: 10px auto;
+    }
+    
+    .MainPage-About-Me-Image-Wrap{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+    }
+    
+    .MainPage-About-Me-Image-Background{
+        background: #f7f7f7;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+    }
+    
+    .MainPage-About-Me-Image{
+        width: 160px;
+        height: 160px;
+        background: url('../img/me.png');
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .MainPage__Content-About-Buttons-Wrap{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: auto;
+        height: auto;
+    }
+    
+    .MainPage__Content-Hire-Button{
+        width: 92px;
+        height: 36px;
+        color: #F7F7F7;
+        background: #383838;
+        border: none;
+        border-radius: 5px;
+        margin-right: 16px;
+        margin-left: auto;
+    }
+    
+    .MainPage__Content-Copy-Button{
+        width: 92px;
+        height: 36px;
+        color: #F7F7F7;
+        background: #212121;
+        border: 1px solid #f7f7f7;
+        border-radius: 5px;
+        margin-right: 16px;
+        margin-left: auto;
+    }
+    
+    /* Project Styles*/
+    
+    
+    .MainPage__Content-Link-Wrap{
+        width: 80%;
+        margin: 10px auto;
+        background: rgba(41,41,41,1);
+        border-radius: 25px;
+        border: 1px solid #7f7f7f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .MainPage__Content-Link{
+        margin: 50px;
+        text-decoration: none;
+        color: #8a8a8a;
+    }
+    
+    .MainPage__Content-Link:hover{
+        margin: 50px;
+        text-decoration: none;
+        color: #8a8a8a;
+        animation: blinker 1s linear infinite;    
+    }
+    
+    .MainPage__Content-Link-Head-Wrap{
+        width: 95%;
+        height: auto;
+        margin: 15px auto;
+    }
+    
+    .MainPage__Content-Link-Mark{
+        font-size: 20px;
+        color: #c0c0c0;
+    }
+    
+    .MainPage__Content-Link-Mark::marker{
+        color: #383838;
+    }
+    
+    .MainPage__Content-Link-Head{
+        width: auto;
+        height: auto;
+        color: #ffffff;
+        font-size: 20px;
+        text-decoration: none;
+        padding-left: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .MainPage__Content-Link-Desc{
+        padding-left: 20px;
+        color: rgb(22,22,22);
+        font-size: 18px;
+    }
+    
+    
+    .MainPage__Content-Lab-Wrap{
+        width: 95%;
+        height: 96px;
+        background: rgb(66, 66, 66);
+        border-radius: 12px;
+        margin: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+    }
+    
+    /* СallAction Styles */
+    .MainPage__CallAction-Wrap{
+        width: 95%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 25px auto;
+    }
+    
+    .MainPage__CallAction-Head{
+        color: #ffffff;
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    .MainPage__CallAction-Desc{
+        color: #c0c0c0;
+        font-size: 18px;
+        text-align: center;
+        
+    }
+    
+    /* Footer Styles */
+    
+    .MainPage__Footer{
+        width: 300px;
+        height: 78px;
+        background: rgba(41,41,41,1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+        margin-top: 20px;
+        border-radius: 25px;
+        border: 1px solid #7f7f7f;
+    }
+}
+
